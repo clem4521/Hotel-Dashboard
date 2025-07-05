@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<h1>Dashboard</h1>
-			<p id="usernameTag"></p>
+			<p id="nameTag"></p>
 		</header>
 		<aside>
 			<ul>
@@ -21,8 +21,35 @@
 				<li><span>Home</span></li>
 			</ul>
 		</aside>
-		<div class="unoccupiedBox">
-		</div>
-		<script src="./index.js"></script>
+		<main>
+		    <div class="unoccupiedBox">
+			    <div class="boxContainer">
+					<p class="title">Unoccupied Rooms</p>
+				    <div class="boxes" id="boxes"></div>
+			    </div>
+		    </div>
+		    <div class="occupiedBox">
+				 <div class="boxContainer">
+					<p class="title">Occupied Rooms</p>
+				    <div class="boxes" id="boxes"></div>
+			    </div>
+		    </div>
+		    <div class="logSection">
+				<p class="title">Log</p>
+				<div class="logTable">
+					<table>
+						<tr>
+							<td>Customer Name</td>
+							<td>Room Number</td>
+							<td>People</td>
+							<td>Nights</td>
+							<td>Date of Check In</td>
+							<td>Date of Checking out</td>
+						</tr>
+					</table>
+				</div>
+		    </div>
+		</main>
+	<script src="./index.js"></script>
 	</body>
 </html>
