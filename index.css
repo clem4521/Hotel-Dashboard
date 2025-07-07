@@ -26,7 +26,7 @@ header p{
     font-size:20px;
     font-weilogSectionght:600;
 }
-header h1, header p,ul li{
+header h1, header p,ul li,ul li span button{
     color:white;
     font-family:"Sofia", sans-serif;
 }
@@ -36,40 +36,51 @@ aside{
     height:800px;
     margin-top:10px;
     margin-left:10px;
-    border-ralogSectiondius:10px;
+    border-radius:10px;
     position: absolute ;
     border: 2px solid green;
 }
 ul li{
     text-align:center;
-    font-size:1.5rem;
-    font-weight:600;
-    background-color:var(--primary);
+    
     position:relative;
     margin-top:50px;
-    margin-left:20%;
-    width:140px;
-    height:50px;
+   
     list-style:none;
-    border-radius:10px;
+    
 }
 ul{
     display:grid;
     grid-template-columns:1fr;
 }
-ul li:hover{
-    background-color:var(--light-green);
-}
+
 ul li span{
     position:relative;
     top:10px;
 }
+ul li span button{
+    background-color:var(--primary);
+    border-style:none;
+    width:140px;
+    height:60px;
+    top:0px;
+    font-size:1.5rem;
+    font-weight:600;
+    border-radius:10px;
+}
+ul li span button:active{
+    background-color:var(--light-green);
+}
 main{
     position:relative;
-    width:1580px;
+    display:block;
+    width:70vw;
     height:850px;
     left:300px;
     border: 2px solid red;
+}
+#home{
+    display:blck;
 }
 .unoccupiedBox{
     position:absolute ;
@@ -100,7 +111,7 @@ main{
     margin-bottom:10px;
 }
 .boxes{
-    display:glogSectionrid;
+    display:grid;
     grid-template-columns: 1fr;
     gap:10px;
 }
@@ -114,7 +125,7 @@ main{
     background-color:var(--grey);
     position:absolute;
     bottom:10px;
-    width:1300px;
+    width:60vw;
     height: 300px;
 }
 .logSection .title{
@@ -123,7 +134,7 @@ main{
 .logTable{
     overflow-y: scroll;
     background:var(--dark-grey);
-    width:1300px;
+    width:60vw;
     height:260px;
     margin:0px;
 }

@@ -14,40 +14,42 @@
 		</header>
 		<aside>
 			<ul>
-				<li><span>Rooms</span></li>
-				<li><span>Check In</span></li>
-				<li><span>Check Out</span></li>
-				<li><span>Status</span></li>
-				<li><span>Home</span></li>
+				<li><span><button onClick="goToRooms()">Rooms</button></span></li>
+				<li><span><button>Check In</button></span></li>
+				<li><span><button>Check Out</button></span></li>
+				<li><span><button>Status</button></span></li>
+				<li><span><button onClick="goBackHome()">Home</button></span></li>
 			</ul>
 		</aside>
-		<main>
-		    <div class="unoccupiedBox">
-			    <div class="boxContainer">
-					<p class="title">Unoccupied Rooms</p>
-				    <div class="boxes" id="boxes"></div>
-			    </div>
-		    </div>
-		    <div class="occupiedBox">
-				 <div class="boxContainer">
-					<p class="title">Occupied Rooms</p>
-				    <div class="boxes" id="boxes"></div>
-			    </div>
-		    </div>
-		    <div class="logSection">
-				<p class="title">Log</p>
-				<div class="logTable">
-					<table>
-						<tr>
-							<td>Customer Name</td>
-							<td>Room Number</td>
-							<td>People</td>
-							<td>Nights</td>
-							<td>Date of Check In</td>
-							<td>Date of Checking out</td>
-						</tr>
-					</table>
-				</div>
+		<main id="main">
+			<div id="home">
+		        <div class="unoccupiedBox">
+			        <div class="boxContainer">
+					    <p class="title">Unoccupied Rooms</p>
+				        <div class="boxes" id="unocupiedBoxes"></div>
+			        </div>
+		        </div>
+		        <div class="occupiedBox">
+				     <div class="boxContainer">
+					    <p class="title">Occupied Rooms</p>
+				        <div class="boxes" id="occupiedBoxes"></div>
+			        </div>
+		        </div>
+		        <div class="logSection">
+				    <p class="title">Log</p>
+				    <div class="logTable">
+					    <table>
+						    <tr>
+							    <td>Customer Name</td>
+							    <td>Room Number</td>
+							    <td>People</td>
+							    <td>Nights</td>
+							    <td>Date of Check In</td>
+							    <td>Date of Checking out</td>
+						    </tr>
+					   </table>
+				    </div>
+		        </div>
 		    </div>
 		</main>
 	<script src="./index.js"></script>
